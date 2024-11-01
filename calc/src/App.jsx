@@ -12,7 +12,9 @@ function App() {
     <>
       <div className="calc">
         <div className="res">
+          <span className='resText'>
           {expression}
+          </span>
         </div>
         <div className="UI">
         <button onClick={() => setCount((expression) => expression = '')} className="item class7">

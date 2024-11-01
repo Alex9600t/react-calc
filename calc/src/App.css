@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
 #root {
   margin: 0 auto;
 }
@@ -20,8 +23,8 @@
 .UI {
   flex: 1;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 равных столбца */
-  grid-template-rows: repeat(5, 1fr);    /* 4 равных строки */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   gap: 10px; 
 }
 
@@ -29,4 +32,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.resText {
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: center;
+  font-size: 32px;
+}
+
+span {
+  font-family: "Josefin Sans", sans-serif;
 }
