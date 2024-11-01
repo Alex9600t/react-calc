@@ -4,54 +4,56 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [expression, setCount] = useState('')
+
 
   return (
     <>
       <div className="calc">
         <div className="res">
+          {expression}
         </div>
         <div className="UI">
-          <button className="item class0">
+          <button onClick={() => setCount((expression) => expression += '0')} className="item class0">
             <span>0</span>
           </button>
-          <button className="item class1">
+          <button onClick={() => setCount((expression) => expression += '1')} className="item class1" >
             <span>1</span>
           </button>
-          <button className="item class2">
+          <button onClick={() => setCount((expression) => expression += '2')} className="item class2">
             <span>2</span>
           </button>
-          <button className="item class3">
+          <button onClick={() => setCount((expression) => expression += '3')} className="item class3">
             <span>3</span>
           </button>
-          <button className="item class4">
+          <button onClick={() => setCount((expression) => expression += '4')} className="item class4">
             <span>4</span>
           </button>
-          <button className="item class5">
+          <button onClick={() => setCount((expression) => expression += '5')} className="item class5">
             <span>5</span>
           </button>
-          <button className="item class6">
+          <button onClick={() => setCount((expression) => expression += '6')} className="item class6">
             <span>6</span>
           </button>
-          <button className="item class7">
+          <button onClick={() => setCount((expression) => expression += '7')} className="item class7">
             <span>7</span>
           </button>
-          <button className="item class8">
+          <button onClick={() => setCount((expression) => expression += '8')} className="item class8">
             <span>8</span>
           </button>
-          <button className="item class9">
+          <button onClick={() => setCount((expression) => expression += '9')} className="item class9">
             <span>9</span>
           </button>
-          <button className="item plus">
+          <button onClick={() => setCount((expression) => expression += '+')} className="item plus">
             <span>+</span>
           </button>
-          <button className="item minus">
+          <button onClick={() => setCount((expression) => expression += '-')} className="item minus">
             <span>-</span>
           </button>
-          <button className="item multiply">
+          <button onClick={() => setCount((expression) => expression += '*')} className="item multiply">
             <span>*</span>
           </button>
-          <button className="item divide">
+          <button onClick={() => setCount((expression) => expression += '/')} className="item divide">
             <span>/</span>
           </button>
           <button className="item equals">
