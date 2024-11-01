@@ -56,7 +56,7 @@ function App() {
           <button onClick={() => setCount((expression) => expression += '/')} className="item divide">
             <span>/</span>
           </button>
-          <button className="item equals">
+          <button onClick={() => setCount((expression) => eval(expression))} className="item equals">
             <span>=</span>
           </button>
         </div>
