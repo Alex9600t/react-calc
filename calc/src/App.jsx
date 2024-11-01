@@ -8,12 +8,55 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="calc">
         <div className="res">
-
         </div>
-        <div className="num">
-          
+        <div className="UI">
+          <button className="item class0">
+            <span>0</span>
+          </button>
+          <button className="item class1">
+            <span>1</span>
+          </button>
+          <button className="item class2">
+            <span>2</span>
+          </button>
+          <button className="item class3">
+            <span>3</span>
+          </button>
+          <button className="item class4">
+            <span>4</span>
+          </button>
+          <button className="item class5">
+            <span>5</span>
+          </button>
+          <button className="item class6">
+            <span>6</span>
+          </button>
+          <button className="item class7">
+            <span>7</span>
+          </button>
+          <button className="item class8">
+            <span>8</span>
+          </button>
+          <button className="item class9">
+            <span>9</span>
+          </button>
+          <button className="item plus">
+            <span>+</span>
+          </button>
+          <button className="item minus">
+            <span>-</span>
+          </button>
+          <button className="item multiply">
+            <span>*</span>
+          </button>
+          <button className="item divide">
+            <span>/</span>
+          </button>
+          <button className="item equals">
+            <span>=</span>
+          </button>
         </div>
       </div>
     </>
